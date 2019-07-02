@@ -1,11 +1,11 @@
-from turtle import *
+import turtle
 
 # get a pen and move it to the starting position
-pen = Turtle()
+pen = turtle.Turtle()
 pen.speed(0)
 
-screen = Screen()
-screen.setup(1000, 400)
+window = turtle.Screen()
+window.setup(1000, 400)
 
 pen.up()
 pen.left(180)
@@ -222,4 +222,4 @@ pen.forward(170)
 
 pen.end_fill()
 
-exitonclick()
+window.exitonclick()
