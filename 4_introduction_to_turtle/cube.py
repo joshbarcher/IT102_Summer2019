@@ -1,7 +1,7 @@
-# bring the turtle module into our script
+# bring the 4_introduction_to_turtle module into our script
 import turtle
 
-# create a turtle and screen object
+# create a 4_introduction_to_turtle and screen object
 pen = turtle.Turtle()
 window = turtle.Screen()
 
