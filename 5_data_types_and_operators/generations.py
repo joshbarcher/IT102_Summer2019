@@ -15,6 +15,3 @@ elif born >= 1995:
 else:
     print("I'm not sure what generation you're from")
     print("But you're awesome!")
-
-if 1945 <= born < 1990:
-    print("Hello")
