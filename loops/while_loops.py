@@ -34,18 +34,23 @@ line3 = "And I'm gonna be high as a kite by then"
 
 playingSong = True
 while playingSong:
-    line = int(input("Enter line (1-3) or 0 to stop: "))
+    line = input("Enter line (1-3) or 0 to stop: ")
 
-    if line == 0:
-        playingSong = False
-    elif line == 1:
-        print(line1)
-    elif line == 2:
-        print(line2)
-    elif line == 3:
-        print(line3)
+    if line.isnumeric():
+        line = int(line)
+        if line == 0:
+            playingSong = False
+        elif line == 1:
+            print(line1)
+        elif line == 2:
+            print(line2)
+        elif line == 3:
+            print(line3)
+        else:
+            print("Please enter 0 to stop or 1-3")
     else:
-        print("Please enter 0 to stop or 1-3")
+        print("Please enter a number 0 or 1-3")
+
 
 # play craps with the user (dice rolling)
 continuePlaying = True
